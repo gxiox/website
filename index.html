@@ -72,8 +72,8 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 
 // 1) สร้างโปรเจกต์ฟรีที่ https://supabase.com
 // 2) วาง Project URL และ anon/publishable key จาก Project Settings > API
-const SUPABASE_URL = 'PASTE_YOUR_SUPABASE_PROJECT_URL_HERE';
-const SUPABASE_ANON_KEY = 'PASTE_YOUR_SUPABASE_ANON_KEY_HERE';
+const SUPABASE_URL = 'https://supabase.com/dashboard/new/kvypwrwljinnzlkvxlhw?projectName=gxiox%27s%20Project';
+const SUPABASE_ANON_KEY = 'sb_secret_WOSVHVTAixPelfM-jYYbWw_xv6Q62o5';
 const configured = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('PASTE_') && !SUPABASE_ANON_KEY.includes('PASTE_');
 const supabase = configured ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
 
